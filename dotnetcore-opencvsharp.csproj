@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>dotnetcore_opencvsharp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCVSharp4" Version="4.4.0.20200915" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(OS.StartsWith('Windows'))">
+    <PackageReference Include="OpenCVSharp4.Windows" Version="4.4.0.20200915" />
+  </ItemGroup>
+
+</Project>
